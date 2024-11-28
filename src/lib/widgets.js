@@ -13,6 +13,7 @@ export const widgets = {
         'raw',
         'report',
         'symbol',
+        'richsymbol',
         'stopwatch',
         'time',
         'text',
@@ -48,6 +49,7 @@ export const widgets = {
         stopwatch: ['dev_id','channel', 'query'],
         time: ['dev_id','channel', 'query'],
         symbol: ['dev_id','channel','channel_translated','range','unit', 'rounding', 'icon'],
+        richsymbol: ['dev_id','channel','channel_translated','range','unit', 'rounding', 'icon'],
     },
     chartFields: {
         line: ['cubicInterpolation'],
