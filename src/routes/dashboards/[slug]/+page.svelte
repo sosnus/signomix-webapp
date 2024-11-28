@@ -20,6 +20,8 @@
             <ChartjsWidgetExample index={index} bind:config={items} />
             {:else if 'symbol'===getWidgetType(index)}
             <SymbolWidget bind:config={dashboardConfig.widgets[index]} />
+            {:else if 'richsymbol'===getWidgetType(index)}
+            <RichSymbolWidget bind:config={dashboardConfig.widgets[index]} />
             {:else if 'text'===getWidgetType(index)}
             <TextWidget bind:config={dashboardConfig.widgets[index]} />
             {:else if 'led'===getWidgetType(index)}
@@ -47,6 +49,7 @@
     import CanvasWidgetExample from '$lib/components/widgets/CanvasWidgetExample.svelte';
     import ChartjsWidgetExample from '$lib/components/widgets/ChartjsWidgetExample.svelte';
     import SymbolWidget from '$lib/components/widgets/SymbolWidget.svelte';
+    import RichSymbolWidget from '$lib/components/widgets/RichSymbolWidget.svelte';
     import TextWidget from '$lib/components/widgets/TextWidget.svelte';
     import LedWidget from '$lib/components/widgets/LedWidget.svelte';
     import RawDataWidget from '$lib/components/widgets/RawDataWidget.svelte';
